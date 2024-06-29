@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task Form</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="modal-overlay">
+        <div class="acf-fields acf-form-fields -top">
+            <div class="category-header">
+                <h2 class="category-title">Sales</h2>
+            </div>
+            <div class="form-row">
+                <div class="acf-field acf-field-text Task_Title">
+                    <div class="acf-label">
+                        <label for="acff-post-field_667765be43933"><i class="fas fa-tasks"></i> TASK Title:</label>
+                    </div>
+                    <div class="acf-input">
+                        <input type="text" id="acff-post-field_667765be43933" name="acff[post][field_667765be43933]" value="adfdfad" />
+                    </div>
+                </div>
+                <div class="acf-field acf-field-date Task_Started">
+                    <div class="acf-label">
+                        <label for="acff-submission-field_667765bf113e9"><i class="fas fa-calendar-alt"></i> TASK Started:</label>
+                    </div>
+                    <div class="acf-input">
+                        <input type="date" id="acff-submission-field_667765bf113e9" value="2024-06-23" name="acff[submission][field_667765bf113e9]" />
+                    </div>
+                </div>
+            </div>
+            <div class="acf-field acf-field-textarea Task_Description">
+                <div class="acf-label">
+                    <label for="acff-post-field_667765be4397b"><i class="fas fa-align-left"></i> TASK Description:</label>
+                </div>
+                <div class="acf-input">
+                    <textarea id="acff-post-field_667765be4397b" name="acff[post][field_667765be4397b]" rows="5"></textarea>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="acf-field acf-field-date Task_Deadline">
+                    <div class="acf-label">
+                        <label for="acff-submission-field_667765bf11427"><i class="fas fa-hourglass-half"></i> TASK Deadline:</label>
+                    </div>
+                    <div class="acf-input">
+                        <input type="date" id="acff-submission-field_667765bf11427" value="2024-06-27" name="acff[submission][field_667765bf11427]" />
+                    </div>
+                </div>
+                <div class="acf-field acf-field-button-group Task_Progress">
+                    <div class="acf-label">
+                        <label for="acff-submission-field_667765bf11463"><i class="fas fa-tasks"></i> TASK Progress:</label>
+                    </div>
+                    <div class="acf-input">
+                        <div class="acf-button-group">
+                            <label><input type="radio" name="acff[submission][field_667765bf11463]" value="1" checked="checked" /> In Progress</label>
+                            <label><input type="radio" name="acff[submission][field_667765bf11463]" value="2" /> Completed</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="acf-field acf-field-related-terms Task_Category">
+                    <div class="acf-label">
+                        <label for="acff-submission-field_667765be43a09"><i class="fas fa-tags"></i> TASK Category:</label>
+                    </div>
+                    <div class="acf-input">
+                        <div class="acf-related-terms-field" data-save="0" data-ftype="radio" data-taxonomy="category" data-allow_null="0">
+                            <ul class="acf-checkbox-list acf-bl">
+                                <li class="related-term" data-id="1">
+                                    <label><input type="radio" name="acff[submission][field_667765be43a09]" value="1" /><span>Uncategorized</span></label>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="acf-field acf-field-url Task_Weblink">
+                    <div class="acf-label">
+                        <label for="acff-submission-field_667765be43a4f"><i class="fas fa-link"></i> Web Link:</label>
+                    </div>
+                    <div class="acf-input">
+                        <input type="url" id="acff-submission-field_667765be43a4f" name="acff[submission][field_667765be43a4f]" placeholder="https://cocoacircle.com" />
+                    </div>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="acf-field acf-field-button-group Task_Importance">
+                    <div class="acf-label">
+                        <label for="acff-submission-field_667765be43a94"><i class="fas fa-exclamation-triangle"></i> TASK Importance:</label>
+                    </div>
+                    <div class="acf-input">
+                        <div class="acf-button-group">
+                            <label><input type="radio" name="acff[submission][field_667765be43a94]" value="10" checked="checked" /> Low</label>
+                            <label><input type="radio" name="acff[submission][field_667765be43a94]" value="20" /> Medium</label>
+                            <label><input type="radio" name="acff[submission][field_667765be43a94]" value="30" /> High</label>
+                            <label><input type="radio" name="acff[submission][field_667765be43a94]" value="40" /> Highest</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="acf-field acf-field-select is-required Task_Status">
+                    <div class="acf-label">
+                        <label for="acff-post-field_667765be43ad8"><i class="fas fa-clipboard-check"></i> TASK Status: <span class="acf-required">*</span></label>
+                    </div>
+                    <div class="acf-input">
+                        <select id="acff-post-field_667765be43ad8" name="acff[post][field_667765be43ad8]">
+                            <option value="publish" selected="selected">Published</option>
+                            <option value="draft">Draft</option>
+                            <option value="trash">Trash</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

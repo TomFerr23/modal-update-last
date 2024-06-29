@@ -1,0 +1,240 @@
+@font-face {
+    font-family: 'GothamBold';
+    src: url('fonts/GothamBold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Neighbor';
+    src: url('fonts/Neighbor.ttf') format('truetype');
+}
+
+body {
+    background-color: #F6F6F6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+    position: relative;
+    font-family: 'GothamBold', sans-serif;
+}
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+    overflow-y: auto;
+}
+
+.acf-fields {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 800px;
+    animation: fadeIn 0.3s ease-in-out;
+    border-left: 10px solid; 
+    position: relative;
+    overflow-y: auto;
+    max-height: 80vh;
+}
+
+.acf-fields.sales-category {
+    border-color: #FFC20E; /* Sales category color */
+}
+
+.acf-fields.logistics-category {
+    border-color: #0D9C4A; /* Logistics category color */
+}
+
+.acf-fields.operations-category {
+    border-color: #F26539; /* Operations category color */
+}
+
+.acf-fields.research-and-development-category {
+    border-color: #00A2A2; /* Research and Development category color */
+}
+
+.acf-fields.social-media-category {
+    border-color: #E671AB; /* Social Media category color */
+}
+
+.acf-fields.tech-category {
+    border-color: #0047AB; /* Tech category color */
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.category-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.category-title {
+    font-family: 'Neighbor', sans-serif;
+    font-size: 1.5em;
+    font-weight: 900; 
+    color: #333;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.form-row {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.acf-fields .acf-field {
+    margin-bottom: 25px; 
+    flex: 1;
+    min-width: 300px;
+    position: relative;
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+}
+
+.acf-fields .acf-field.sales-category {
+    border-color: #FFC20E;
+}
+
+.acf-fields .acf-field.logistics-category {
+    border-color: #0D9C4A;
+}
+
+.acf-fields .acf-field.operations-category {
+    border-color: #F26539;
+}
+
+.acf-fields .acf-field.research-and-development-category {
+    border-color: #00A2A2;
+}
+
+.acf-fields .acf-field.social-media-category {
+    border-color: #E671AB;
+}
+
+.acf-fields .acf-field.tech-category {
+    border-color: #0047AB;
+}
+
+.acf-fields .acf-field .acf-label {
+    display: flex;
+    align-items: center;
+    font-size: 1.1em;
+    position: relative;
+    margin-bottom: 10px;
+    font-family: 'Neighbor', sans-serif;
+    font-weight: 800;
+    color: #333;
+    text-transform: uppercase;
+}
+
+.acf-fields .acf-field .acf-label i {
+    margin-right: 10px;
+    color: #888;
+}
+
+.acf-fields .acf-field .acf-input {
+    font-family: 'GothamBold', sans-serif;
+    color: #555;
+}
+
+.acf-fields .acf-field .acf-input input,
+.acf-fields .acf-field .acf-input textarea,
+.acf-fields .acf-field .acf-input select {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    font-family: 'GothamBold', sans-serif;
+    font-size: 1em;
+    background-color: #fff;
+    color: #555;
+    box-sizing: border-box;
+}
+
+.acf-fields .acf-field .acf-input textarea {
+    resize: vertical;
+}
+
+.acf-fields .acf-field .acf-checkbox-list {
+    list-style: none;
+    padding: 0;
+}
+
+.acf-fields .acf-field .acf-checkbox-list li {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.acf-fields .acf-field .acf-checkbox-list li label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    gap: 10px;
+}
+
+.acf-fields .acf-field .acf-checkbox-list li label input[type="radio"] {
+    margin-right: 10px; /* Adjust margin as needed */
+}
+
+.acf-fields .acf-field .acf-button-group {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap; /* Ensure buttons wrap within the container */
+}
+
+.acf-fields .acf-field .acf-button-group label {
+    padding: 10px 15px; /* Adjust padding for better fit */
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    cursor: pointer;
+    background-color: #f0f0f0;
+    transition: background-color 0.3s ease;
+    display: flex;
+    align-items: center;
+}
+
+.acf-fields .acf-field .acf-button-group label.selected {
+    background-color: #ddd;
+}
+
+.acf-fields .acf-field .acf-button-group label:hover {
+    background-color: #e0e0e0;
+}
+
+.acf-fields .acf-field .acf-button-group input[type="radio"] {
+    display: none; /* Hide the actual radio button */
+}
+
+.acf-fields .acf-field .acf-button-group label::before {
+    content: '';
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    margin-right: 10px;
+    border: 2px solid #555;
+    border-radius: 50%;
+    background-color: #fff;
+}
+
+.acf-fields .acf-field .acf-button-group input[type="radio"]:checked + label::before {
+    background-color: #555;
+}
